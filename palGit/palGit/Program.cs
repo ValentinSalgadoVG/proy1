@@ -33,22 +33,59 @@ namespace palGit
 
         public static void suma()
         {
-
+            try
+            {
+                int a = int.Parse(Console.Read().ToString());
+                int b = int.Parse(Console.Read().ToString());
+                Console.WriteLine(a+b);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Tequivocaste");
+            }
         }
 
         public static void resta()
         {
-
+            try
+            {
+                int a = int.Parse(Console.Read().ToString());
+                int b = int.Parse(Console.Read().ToString());
+                Console.WriteLine(a - b);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Tequivocaste: {0}",ex);
+            }
         }
 
         public static void multiplicacion()
         {
+            try
+            {
+                int a = int.Parse(Console.Read().ToString());
+                int b = int.Parse(Console.Read().ToString());
+                Console.WriteLine(a * b);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Tequivocaste: {0}", ex);
+            }
 
         }
 
         public static void division()
         {
-
+            try
+            {
+                int a = int.Parse(Console.Read().ToString());
+                int b = int.Parse(Console.Read().ToString());
+                Console.WriteLine(a / b);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Tequivocaste: {0}", ex);
+            }
         }
     }
 }
